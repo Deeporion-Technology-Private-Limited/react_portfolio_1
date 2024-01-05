@@ -2,6 +2,7 @@ import React from "react";
 import { HiDocumentReport } from "react-icons/hi";
 import "./home.css";
 import { useTranslation } from "react-i18next";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const PenetrationBenefits = () => {
   const { t } = useTranslation();
@@ -73,15 +74,18 @@ const PenetrationBenefits = () => {
           <div className="penetration_flex">
             {data.map((obj) => (
               <div className="benefit_penetration_desp_box" key={obj.id}>
-                <div>
-                  <div className="benefit_penetration_desp_content"></div>
-                </div>
+                <div></div>
                 <div className="benefit_penetration_desp_content">
                   <div className="benefit_desp_icon">
                     <div className="penetration_icon">{obj.icon}</div>
                     <h2>{obj.heading}</h2>
                   </div>
                   <p>{obj.desp}</p>
+                  <div className="benefit_detail">
+                    <span>
+                      <IoIosArrowRoundForward />
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

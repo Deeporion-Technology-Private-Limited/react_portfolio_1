@@ -49,7 +49,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; 
+  line-height: 28px;
   color: var(--lightGrey);
 }
 
@@ -222,6 +222,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .penetration_img {
@@ -276,6 +277,25 @@
   object-fit: contain;
   object-position: center;
   overflow-x: hidden;
+}
+
+.benefit_detail {
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.benefit_detail span {
+  font-size: 1.375rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+  color: #893e97;
+  box-shadow: 0px 0px 10px 0px rgba(137, 62, 151, 0.2) inset;
+  width: 1rem;
+  height: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
 }
 
 /* why Penetration CSS  */
@@ -514,6 +534,7 @@
 
 .overlay_bottom {
   position: absolute;
+  top: 0;
   background-color: black;
   opacity: 0.8;
   overflow: hidden;
@@ -662,4 +683,226 @@ p {
 .scroll-trigger.animate {
   transform: translateY(0px);
   opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  /*  landing page */
+
+  .home_banner_img {
+    display: none;
+  }
+  .bold_heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    width: 18.75rem;
+  }
+
+  .home_content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sub_heading_home {
+    width: 18.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+
+  .idea_body:hover {
+    transform: translateY(0px);
+  }
+
+  .get_started_btn {
+    width: 6.25rem;
+    height: 2.25rem;
+    padding: 0.5rem 0.75rem 0.56rem 0.688;
+    font-size: 0.875rem;
+  }
+
+  .work_btn {
+    width: 8.75rem;
+    font-size: 0.875rem;
+  }
+
+  .home_ideas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .read_more_icon {
+    font-size: 1.25rem;
+  }
+  .penetration_container {
+    gap: 0.625rem;
+  }
+
+  .penetration_container h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    width: 13.75rem;
+  }
+
+  .supportive_text {
+    width: 18.75rem;
+    font-size: 0.875rem;
+  }
+
+  .penetration_desp_content h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-wrap: nowrap;
+  }
+
+  .penetration_desp_content p {
+    width: 16.25rem;
+    font-size: 0.875rem;
+  }
+
+  .images-container {
+    max-width: 100vw;
+    margin-right: 1.875rem;
+    margin-left: 1.875rem;
+  }
+
+  .latest_container .image {
+    width: 13.313rem;
+    height: 17.063rem;
+  }
+  .overlay {
+    position: absolute;
+    opacity: 0.8;
+    width: 13.313rem;
+    height: 17.06rem;
+    top: 0;
+  }
+  .overlay .text,
+  .overlay_bottom .text {
+    font-size: 0.875rem;
+    width: 11.93rem;
+    line-height: 1.18rem;
+    height: 3.56;
+  }
+
+  .avatar_info h2 {
+    font-size: 0.875rem;
+  }
+
+  .avatar_info p {
+    font-size: 0.75rem;
+  }
+
+  .nav_btn_right {
+    position: absolute;
+    right: 0;
+    top: 42%;
+    z-index: 9;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  .nav_btn_left {
+    position: absolute;
+    left: 0;
+    top: 42%;
+    z-index: 9;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_container :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_heading {
+    font-size: 1rem;
+  }
+
+  .footer_heading,
+  .footer_links {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .social_links {
+    display: flex;
+  }
+
+  .benefit_penetration_desp_box {
+    width: 8.75rem;
+    height: 8.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .benefits_penetration_container h1 {
+    font-size: 1.5rem;
+    width: 8.75rem;
+  }
+  .benefit_penetration_desp_content h2 {
+    width: 7.313rem;
+    font-size: 0.675rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .benefit_penetration_desp_content p {
+    display: none;
+  }
+
+  .benefit_supportive_text {
+    width: 8.75rem;
+    font-size: 0.875rem;
+    text-align: left;
+    margin-top: 0;
+  }
+  .benefit_text {
+    position: relative;
+    top: 5.625rem;
+    right: 1.75rem;
+  }
+
+  .benefit_desp_icon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 0.5rem;
+  }
+  .penetration_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .benefit_detail {
+    display: flex;
+  }
+
+  .scene,
+  .scene2 {
+    width: auto;
+  }
+
+  .scene :nth-child(1) {
+    order: 1;
+  }
+
+  .why_penetration_content_h1 {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    width: 12.5rem;
+    line-height: 1.75rem;
+  }
 }

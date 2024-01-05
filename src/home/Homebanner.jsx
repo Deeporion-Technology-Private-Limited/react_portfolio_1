@@ -90,7 +90,7 @@ const Homebanner = () => {
                 </div>
               </div>
               <div>
-                <img src={image} alt="" />
+                <img className="home_banner_img" src={image} alt="" />
               </div>
             </div>
           </div>

@@ -40,8 +40,8 @@ const BlogCarousel = () => {
       slidesToSlide: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
+      breakpoint: { max: 500, min: 0 },
+      items: 2,
       slidesToSlide: 1,
     },
   };
@@ -100,16 +100,7 @@ const BlogCarousel = () => {
         renderArrowsWhenDisabled={false}
         renderButtonGroupOutside={false}
         renderDotsOutside={false}
-        responsive={{
-          desktop: {
-            breakpoint: {
-              max: 3000,
-              min: 1024,
-            },
-            items: 3,
-            partialVisibilityGutter: 40,
-          },
-        }}
+        responsive={responsive}
       >
         {images.map((image) => {
           return (

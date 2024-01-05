@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React from "react";
 import "./style.css";
 import logo from "../images/LOGO.png";
 import { RiFacebookFill, RiTwitterFill, RiDribbbleFill } from "react-icons/ri";
@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <p className="footer_text">{t("lorem_ipsum_dolor_sit_amet")}</p>
           </div>
-          <div>
+          <div className="social_links">
             <RiFacebookFill className="footer_tags" />
             <RiTwitterFill className="footer_tags" />
             <AiOutlineGithub className="footer_tags" />

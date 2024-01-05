@@ -17,3 +17,9 @@ body {
   --orange: #c9442d;
   --purple: #893e97;
 }
+
+@media screen and (max-width: 500px) {
+  .App {
+    overflow-x: hidden;
+  }
+}

@@ -121,3 +121,29 @@ ul {
   text-align: center;
   margin: 32px 0;
 }
+
+/* style.css */
+
+/* Add styles for the hamburger menu */
+.hamburger_menu {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Show the navigation links when the menu is open */
+.header_links.show {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .header_links_ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hamburger_menu {
+    display: block;
+    color: #fff;
+  }
+}

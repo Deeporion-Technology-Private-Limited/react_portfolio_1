@@ -193,3 +193,28 @@
 .submit_btn:hover {
   background: #893e97;
 }
+
+@media screen and (max-width: 500px) {
+  .person_info_box {
+    width: 18.75rem;
+    padding: 1.875rem;
+  }
+
+  .person_name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+  }
+
+  .person_name input,
+  .person_detail input {
+    margin-bottom: 0.62rem;
+    padding: 0.438rem 11.875rem 0.438rem 0.75rem;
+  }
+
+  .person_text textarea {
+    width: 7.938rem;
+    padding: 0.438rem 9.813rem 6.875rem 0.75rem;
+    margin-top: 0.625rem;
+  }
+}
